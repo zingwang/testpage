@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { Marquee } from "./Marquee";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-16 lg:pt-20">
+    <section className="relative min-h-screen overflow-hidden pt-20 lg:pt-24">
       {/* Background - 보라색 그라데이션 */}
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-br from-[#8b5fa8] via-salon-primary to-[#4a2d5e]"
+        className="absolute inset-0 -z-10"
+        style={{ background: 'linear-gradient(to bottom right, #8b5fa8, #7c5295, #4a2d5e)' }}
         aria-hidden="true"
       />
 
@@ -29,21 +31,21 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="container-custom flex min-h-[calc(100vh-4rem)] flex-col justify-center py-12 lg:min-h-[calc(100vh-5rem)] lg:py-20">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      <div className="container-custom flex min-h-[calc(100vh-5rem)] flex-col justify-center py-12 lg:min-h-[calc(100vh-6rem)] lg:py-16">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Text Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm px-5 py-2.5 text-sm font-medium text-white/90">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm px-4 py-2 text-sm text-white/90">
               <span className="flex h-2 w-2">
                 <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-white opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
               </span>
-              관양시장 미용실
+              관양시장 미용실 · Since 2004
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl font-bold leading-[1.15] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="text-5xl font-bold leading-[1.1] text-white sm:text-6xl lg:text-7xl tracking-tight">
               <span className="block">컷 & 펌 전문</span>
               <span className="mt-2 block bg-gradient-to-r from-white via-salon-cream to-white/80 bg-clip-text text-transparent">
                 Lee Jieyn Hair
@@ -51,22 +53,22 @@ export function Hero() {
             </h1>
 
             {/* Korean Name */}
-            <p className="mt-5 text-xl font-light tracking-wide text-white/70 lg:text-2xl">
+            <p className="mt-4 text-xl text-white/60 tracking-wide lg:text-2xl">
               이지은헤어
             </p>
 
             {/* Subheadline */}
-            <p className="mt-8 text-base leading-relaxed text-white/80 sm:text-lg lg:max-w-lg">
+            <p className="mt-6 text-base leading-relaxed text-white/70 sm:text-lg lg:max-w-md">
               20년 경력의 노하우로 고객님의 얼굴형과 모질에 맞는
-              <strong className="font-semibold text-white"> 자연스러운 스타일링</strong>을 제공합니다.
+              <strong className="text-white font-medium"> 자연스러운 스타일링</strong>을 제공합니다.
             </p>
 
             {/* Features */}
-            <div className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start">
+            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
               {["자연스러운 펌", "손상 최소화", "오래 유지"].map((feature) => (
                 <div
                   key={feature}
-                  className="flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2.5 text-sm text-white/90 border border-white/10"
+                  className="flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-sm text-white/90 border border-white/10"
                 >
                   <svg
                     className="h-4 w-4 text-salon-cream"
@@ -86,13 +88,13 @@ export function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
               <a
                 href="tel:031-387-5117"
-                className="group inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-salon-primary transition-all duration-300 hover:bg-salon-cream hover:shadow-2xl hover:shadow-white/20 w-full sm:w-auto"
+                className="group inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-salon-primary transition-all duration-300 hover:bg-salon-cream hover:shadow-2xl hover:shadow-white/20 hover:scale-105 w-full sm:w-auto"
               >
                 <svg
-                  className="mr-2.5 h-5 w-5 transition-transform group-hover:scale-110"
+                  className="mr-2.5 h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -127,29 +129,29 @@ export function Hero() {
           {/* Logo Visual */}
           <div className="relative mx-auto w-full max-w-sm sm:max-w-md lg:max-w-lg">
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-full bg-white/5 blur-3xl scale-75" />
+            <div className="absolute inset-0 rounded-full bg-white/10 blur-3xl scale-75" />
 
             {/* Main Logo Circle */}
-            <div className="relative aspect-square p-8">
+            <div className="relative aspect-square p-6 sm:p-8">
               {/* Outer Ring - animated */}
               <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-[spin_30s_linear_infinite]" />
 
               {/* Second Ring */}
-              <div className="absolute inset-4 rounded-full border border-white/10" />
+              <div className="absolute inset-4 sm:inset-6 rounded-full border border-white/10" />
 
               {/* Main Circle */}
-              <div className="absolute inset-8 rounded-full bg-gradient-to-br from-white/20 via-white/10 to-transparent backdrop-blur-sm flex items-center justify-center shadow-2xl">
+              <div className="absolute inset-10 sm:inset-14 rounded-full bg-gradient-to-br from-white/20 via-white/10 to-transparent backdrop-blur-sm flex items-center justify-center shadow-2xl">
                 <div className="animate-float">
-                  <Logo className="h-28 w-28 sm:h-36 sm:w-36 lg:h-44 lg:w-44" color="white" />
+                  <Logo className="h-24 w-24 sm:h-32 sm:w-32 lg:h-40 lg:w-40" color="white" />
                 </div>
               </div>
 
               {/* Floating Card - 경력 */}
-              <div className="absolute bottom-8 left-0 glass rounded-2xl p-4 shadow-xl border border-white/20">
+              <div className="absolute bottom-4 left-0 sm:bottom-6 glass rounded-2xl p-3 sm:p-4 shadow-xl border border-white/20">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-salon-primary/10">
+                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-salon-primary/20">
                     <svg
-                      className="h-5 w-5 text-salon-primary"
+                      className="h-5 w-5 sm:h-6 sm:w-6 text-salon-primary"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -157,26 +159,26 @@ export function Hero() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xl font-bold text-salon-text">20+</p>
-                    <p className="text-xs text-gray-500">년 경력</p>
+                    <p className="text-xl sm:text-2xl font-bold text-salon-text">20+</p>
+                    <p className="text-[10px] sm:text-xs text-gray-500">년 경력</p>
                   </div>
                 </div>
               </div>
 
               {/* Floating Card - 재방문 */}
-              <div className="absolute right-0 top-12 glass rounded-2xl p-4 shadow-xl border border-white/20">
+              <div className="absolute right-0 top-8 sm:top-12 glass rounded-2xl p-3 sm:p-4 shadow-xl border border-white/20">
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-1.5">
                     {[1, 2, 3].map((i) => (
                       <div
                         key={i}
-                        className="h-7 w-7 rounded-full border-2 border-white bg-gradient-to-br from-salon-light to-salon-primary"
+                        className="h-6 w-6 sm:h-8 sm:w-8 rounded-full border-2 border-white bg-gradient-to-br from-salon-light to-salon-primary"
                       />
                     ))}
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-salon-text">50회+</p>
-                    <p className="text-[10px] text-gray-500">재방문 단골</p>
+                    <p className="text-sm sm:text-base font-bold text-salon-text">50회+</p>
+                    <p className="text-[10px] sm:text-xs text-gray-500">재방문 단골</p>
                   </div>
                 </div>
               </div>
@@ -185,10 +187,27 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Bottom Marquee */}
+      <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-white/5 backdrop-blur-sm py-4">
+        <Marquee speed={30} className="text-white/40">
+          <span className="mx-8 text-sm sm:text-base font-light tracking-wide">자연스러운 펌</span>
+          <span className="mx-3 text-white/20">✦</span>
+          <span className="mx-8 text-sm sm:text-base font-light tracking-wide">볼륨펌</span>
+          <span className="mx-3 text-white/20">✦</span>
+          <span className="mx-8 text-sm sm:text-base font-light tracking-wide">매직 셋팅</span>
+          <span className="mx-3 text-white/20">✦</span>
+          <span className="mx-8 text-sm sm:text-base font-light tracking-wide">염색 · 탈색</span>
+          <span className="mx-3 text-white/20">✦</span>
+          <span className="mx-8 text-sm sm:text-base font-light tracking-wide">커트</span>
+          <span className="mx-3 text-white/20">✦</span>
+          <span className="mx-8 text-sm sm:text-base font-light tracking-wide">클리닉</span>
+          <span className="mx-3 text-white/20">✦</span>
+        </Marquee>
+      </div>
+
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-xs text-white/50 tracking-widest uppercase">Scroll</span>
-        <div className="h-12 w-6 rounded-full border-2 border-white/30 p-1">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2">
+        <div className="h-10 w-6 rounded-full border-2 border-white/30 p-1">
           <div className="h-2 w-2 rounded-full bg-white animate-bounce" />
         </div>
       </div>
