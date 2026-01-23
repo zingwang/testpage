@@ -4,16 +4,16 @@
 
 @layer base {
   :root {
-    /* 보라색 브랜드 컬러 */
-    --salon-primary: #7c5295;
-    --salon-dark: #5a3d6e;
-    --salon-light: #a87fc2;
-    --salon-accent: #9966cc;
-    --salon-cream: #faf8fc;
-    --salon-warm: #f3eef7;
-    --salon-text: #3d2a4d;
-    --salon-gray: #6b5b73;
-    --border: 270 20% 88%;
+    /* 블랙앤화이트 컬러 */
+    --salon-primary: #000000;
+    --salon-dark: #1a1a1a;
+    --salon-light: #4a4a4a;
+    --salon-accent: #333333;
+    --salon-cream: #f5f5f5;
+    --salon-warm: #ebebeb;
+    --salon-text: #111111;
+    --salon-gray: #666666;
+    --border: 0 0% 88%;
   }
 
   * {
@@ -21,13 +21,13 @@
   }
 
   html {
-    background-color: #2a1a3a;
+    background-color: #000000;
   }
 
   body {
     @apply text-gray-800 antialiased;
     font-family: var(--font-noto-sans-kr), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-    background-color: #2a1a3a;
+    background-color: #000000;
   }
 
   body.loaded {
@@ -41,7 +41,7 @@
 
   /* 선택 영역 스타일 */
   ::selection {
-    background-color: rgba(124, 82, 149, 0.2);
+    background-color: rgba(0, 0, 0, 0.15);
     color: var(--salon-text);
   }
 }
@@ -78,18 +78,18 @@
     align-items: center;
     justify-content: center;
     border-radius: 9999px;
-    background-color: var(--salon-primary);
+    background-color: #000000;
     padding: 0.875rem 2rem;
     color: white;
     font-weight: 500;
     font-size: 0.9375rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 14px 0 rgba(124, 82, 149, 0.25);
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
   }
 
   .btn-primary:hover {
-    background-color: var(--salon-dark);
-    box-shadow: 0 6px 20px 0 rgba(124, 82, 149, 0.35);
+    background-color: #333333;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.25);
     transform: translateY(-2px);
   }
 
@@ -98,16 +98,16 @@
     align-items: center;
     justify-content: center;
     border-radius: 9999px;
-    border: 2px solid var(--salon-primary);
+    border: 2px solid #000000;
     padding: 0.875rem 2rem;
-    color: var(--salon-primary);
+    color: #000000;
     font-weight: 500;
     font-size: 0.9375rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .btn-outline:hover {
-    background-color: var(--salon-primary);
+    background-color: #000000;
     color: white;
     transform: translateY(-2px);
   }
@@ -119,7 +119,7 @@
   }
 
   .card:hover {
-    box-shadow: 0 12px 40px -8px rgba(124, 82, 149, 0.15);
+    box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.1);
     transform: translateY(-4px);
   }
 
@@ -131,7 +131,7 @@
   }
 
   .glass-dark {
-    background: rgba(124, 82, 149, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
@@ -251,7 +251,7 @@
 
 /* 그라디언트 텍스트 */
 .gradient-text {
-  background: linear-gradient(135deg, var(--salon-primary) 0%, var(--salon-light) 100%);
+  background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -263,14 +263,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--salon-cream);
+  background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--salon-light);
+  background: #cccccc;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--salon-primary);
+  background: #999999;
 }

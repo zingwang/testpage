@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { MobileMenu } from "./MobileMenu";
-import { LogoSimple } from "./Logo";
 
 const navigation = [
   { name: "홈", href: "#" },
@@ -20,17 +19,14 @@ export function Header() {
         >
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
-              {/* Logo */}
-              <Link href="/" className="flex items-center gap-3 group">
-                <LogoSimple className="h-9 w-9 transition-transform group-hover:scale-105" color="#7c5295" />
-                <div className="flex flex-col">
-                  <span className="text-base font-bold text-salon-text lg:text-lg leading-tight">
-                    Lee Jieyn Hair
-                  </span>
-                  <span className="text-[10px] tracking-wider text-salon-primary">
-                    컷 & 펌 전문
-                  </span>
-                </div>
+              {/* Brand */}
+              <Link href="/" className="flex flex-col group">
+                <span className="text-base font-bold text-gray-900 lg:text-lg leading-tight">
+                  Lee Jieyn Hair
+                </span>
+                <span className="text-[10px] tracking-wider text-black">
+                  컷 & 펌 전문
+                </span>
               </Link>
 
               {/* Desktop Navigation */}
@@ -39,7 +35,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="relative px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:text-salon-primary rounded-lg hover:bg-salon-primary/5"
+                    className="relative px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:text-black rounded-lg hover:bg-purple-50"
                   >
                     {item.name}
                   </Link>
@@ -50,7 +46,7 @@ export function Header() {
               <div className="hidden items-center gap-3 lg:flex">
                 <a
                   href="tel:031-387-5117"
-                  className="flex items-center gap-2 text-sm font-medium text-salon-text hover:text-salon-primary transition-colors"
+                  className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition-colors"
                 >
                   <svg
                     className="h-4 w-4"
@@ -68,7 +64,7 @@ export function Header() {
                   </svg>
                   031-387-5117
                 </a>
-                <Link href="#location" className="btn-primary text-sm !py-2.5 !px-5">
+                <Link href="#location" className="rounded-lg bg-black text-white text-sm py-2.5 px-5 font-medium hover:bg-gray-800 transition-colors">
                   예약하기
                 </Link>
               </div>

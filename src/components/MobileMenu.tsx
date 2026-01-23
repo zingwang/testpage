@@ -37,7 +37,7 @@ export function MobileMenu({ navigation }: MobileMenuProps) {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl text-salon-text hover:bg-salon-cream/50 transition-colors"
+        className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl text-gray-900 hover:bg-gray-100/50 transition-colors"
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
         aria-label={isOpen ? "메뉴 닫기" : "메뉴 열기"}
@@ -81,7 +81,7 @@ export function MobileMenu({ navigation }: MobileMenuProps) {
         <div className="h-full bg-white shadow-2xl flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-100">
-            <span className="text-lg font-bold text-salon-text">메뉴</span>
+            <span className="text-lg font-bold text-gray-900">메뉴</span>
             <button
               onClick={() => setIsOpen(false)}
               className="flex h-10 w-10 items-center justify-center rounded-xl text-gray-500 hover:bg-gray-100 transition-colors"
@@ -101,12 +101,12 @@ export function MobileMenu({ navigation }: MobileMenuProps) {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="group flex items-center justify-between rounded-xl px-4 py-3.5 text-base font-medium text-gray-700 transition-all hover:bg-gradient-to-r hover:from-salon-cream hover:to-transparent hover:text-salon-primary"
+                  className="group flex items-center justify-between rounded-xl px-4 py-3.5 text-base font-medium text-gray-700 transition-all hover:bg-gradient-to-r hover:from-gray-100 hover:to-transparent hover:text-black"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
                   {item.name}
                   <svg
-                    className="h-4 w-4 text-gray-300 transition-all group-hover:text-salon-primary group-hover:translate-x-1"
+                    className="h-4 w-4 text-gray-300 transition-all group-hover:text-black group-hover:translate-x-1"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -119,12 +119,12 @@ export function MobileMenu({ navigation }: MobileMenuProps) {
           </nav>
 
           {/* Bottom CTA */}
-          <div className="p-4 border-t border-gray-100 bg-gradient-to-t from-salon-cream/50 to-transparent">
+          <div className="p-4 border-t border-gray-100 bg-gradient-to-t from-gray-100/50 to-transparent">
             <a
               href="tel:031-387-5117"
-              className="flex items-center justify-center gap-3 rounded-xl bg-white px-4 py-3.5 text-base font-medium text-salon-text shadow-sm border border-gray-100"
+              className="flex items-center justify-center gap-3 rounded-xl bg-white px-4 py-3.5 text-base font-medium text-gray-900 shadow-sm border border-gray-100"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-salon-cream text-salon-primary">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gray-100 text-black">
                 <svg
                   className="h-5 w-5"
                   fill="none"
@@ -141,13 +141,13 @@ export function MobileMenu({ navigation }: MobileMenuProps) {
               </div>
               <div className="text-left">
                 <span className="block text-sm text-gray-500">전화 문의</span>
-                <span className="font-bold text-salon-primary">031-387-5117</span>
+                <span className="font-bold text-black">031-387-5117</span>
               </div>
             </a>
             <Link
               href="#location"
               onClick={() => setIsOpen(false)}
-              className="btn-primary mt-3 w-full text-center"
+              className="block mt-3 w-full text-center rounded-lg bg-black text-white py-3 font-medium hover:bg-gray-800 transition-colors"
             >
               예약하기
             </Link>
