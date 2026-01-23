@@ -107,15 +107,6 @@ export function Location() {
               </div>
             </div>
 
-            {/* Parking */}
-            <div className="rounded-lg bg-yellow-50 p-3 sm:p-4 flex items-center gap-2 sm:gap-3">
-              <svg className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <p className="text-xs sm:text-sm text-gray-700">
-                <span className="font-medium">주차 안내</span> · 관양시장 공영주차장 (도보 2분)
-              </p>
-            </div>
           </div>
         </div>
       </div>
