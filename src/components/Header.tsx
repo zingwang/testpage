@@ -18,13 +18,13 @@ export function Header() {
           aria-label="메인 네비게이션"
         >
           <div className="px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
+            <div className="flex h-14 sm:h-16 items-center justify-between">
               {/* Brand */}
               <Link href="/" className="flex flex-col group">
-                <span className="text-base font-bold text-gray-900 lg:text-lg leading-tight">
+                <span className="text-sm sm:text-base font-bold text-gray-900 lg:text-lg leading-tight">
                   Lee Jieyn Hair
                 </span>
-                <span className="text-[10px] tracking-wider text-black">
+                <span className="text-[9px] sm:text-[10px] tracking-wider text-black">
                   컷 & 펌 전문
                 </span>
               </Link>
@@ -42,8 +42,8 @@ export function Header() {
                 ))}
               </div>
 
-              {/* CTA Button & Phone */}
-              <div className="hidden items-center gap-3 lg:flex">
+              {/* CTA Button & Phone - Desktop Only */}
+              <div className="hidden lg:flex items-center gap-3">
                 <a
                   href="tel:031-387-5117"
                   className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black transition-colors"
@@ -69,7 +69,7 @@ export function Header() {
                 </Link>
               </div>
 
-              {/* Mobile Menu */}
+              {/* Mobile Menu Button */}
               <MobileMenu navigation={navigation} />
             </div>
           </div>

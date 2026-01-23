@@ -46,7 +46,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
         background: "#000000",
       }}
     >
-      <div className="relative flex flex-col items-center w-full px-6">
+      <div className="w-full text-center px-4">
         {/* Brand Name */}
         <div
           className={`transition-all duration-700 ease-out ${
@@ -55,14 +55,12 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
               : "opacity-100 translate-y-0"
           }`}
         >
-          <h1 className="text-center">
-            <span className="block text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-              Lee Jieyn Hair
-            </span>
-            <span className="block mt-2 sm:mt-3 text-base sm:text-xl text-white/70 tracking-[0.2em]">
-              컷 & 펌 전문
-            </span>
-          </h1>
+          <p className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+            Lee Jieyn Hair
+          </p>
+          <p className="mt-2 sm:mt-3 text-base sm:text-xl text-white/70 tracking-[0.2em]">
+            컷 & 펌 전문
+          </p>
         </div>
 
         {/* Tagline */}
@@ -75,7 +73,9 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
               : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-white/50 text-xs sm:text-sm tracking-widest text-center">이지은헤어 · 관양시장</p>
+          <p className="text-white/50 text-xs sm:text-sm tracking-widest">
+            이지은헤어 · 관양시장
+          </p>
         </div>
       </div>
     </div>
