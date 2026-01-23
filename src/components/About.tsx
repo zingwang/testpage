@@ -1,34 +1,33 @@
 export function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="container-custom">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-          {/* Left - Stats */}
-          <div>
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-6 rounded-xl bg-gray-50">
-                <p className="text-3xl font-bold text-black">20+</p>
-                <p className="text-sm text-gray-500 mt-1">년 경력</p>
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+          {/* Stats */}
+          <div className="order-2 lg:order-1">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
+              <div className="text-center p-3 sm:p-6 rounded-xl bg-gray-50">
+                <p className="text-xl sm:text-3xl font-bold text-black">20+</p>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">년 경력</p>
               </div>
-              <div className="text-center p-6 rounded-xl bg-gray-50">
-                <p className="text-3xl font-bold text-black">10K+</p>
-                <p className="text-sm text-gray-500 mt-1">시술 고객</p>
+              <div className="text-center p-3 sm:p-6 rounded-xl bg-gray-50">
+                <p className="text-xl sm:text-3xl font-bold text-black">10K+</p>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">시술 고객</p>
               </div>
-              <div className="text-center p-6 rounded-xl bg-gray-50">
-                <p className="text-3xl font-bold text-black">98%</p>
-                <p className="text-sm text-gray-500 mt-1">재방문율</p>
+              <div className="text-center p-3 sm:p-6 rounded-xl bg-gray-50">
+                <p className="text-xl sm:text-3xl font-bold text-black">98%</p>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">재방문율</p>
               </div>
             </div>
           </div>
 
-          {/* Right - Content */}
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+          {/* Content */}
+          <div className="order-1 lg:order-2">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
               20년의 노하우
             </h2>
 
-            <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
+            <div className="mt-4 sm:mt-6 space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-600 leading-relaxed">
               <p>
                 관양시장에서 20년 넘게 한 자리를 지키며
                 동네 주민분들의 머리를 손질해 온 이지은헤어입니다.
@@ -44,13 +43,13 @@ export function About() {
             </div>
 
             {/* Owner */}
-            <div className="mt-8 flex items-center gap-4">
-              <div className="h-12 w-12 rounded-full bg-black flex items-center justify-center text-white font-bold">
+            <div className="mt-6 sm:mt-8 flex items-center gap-3 sm:gap-4">
+              <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-black flex items-center justify-center text-white text-sm sm:text-base font-bold">
                 이
               </div>
               <div>
-                <p className="font-bold text-gray-900">이지은</p>
-                <p className="text-sm text-gray-500">Lee Jieyn Hair 원장</p>
+                <p className="font-bold text-gray-900 text-sm sm:text-base">이지은</p>
+                <p className="text-xs sm:text-sm text-gray-500">Lee Jieyn Hair 원장</p>
               </div>
             </div>
           </div>

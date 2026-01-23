@@ -34,41 +34,41 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-100">
+    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-gray-100">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
             시술 메뉴
           </h2>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-2 sm:mt-3 text-sm sm:text-base text-gray-500">
             모든 시술은 1:1 상담 후 고객님께 맞춤 시술해 드립니다
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.name}
-              className={`relative rounded-xl p-6 transition-shadow hover:shadow-md ${
+              className={`relative rounded-xl p-4 sm:p-6 transition-shadow hover:shadow-md ${
                 service.popular
-                  ? "bg-black text-white"
+                  ? "bg-black text-white col-span-2 sm:col-span-1"
                   : "bg-white border border-gray-200"
               }`}
             >
               {service.popular && (
-                <span className="absolute top-4 right-4 bg-white/20 text-white text-xs font-medium px-2 py-1 rounded">
+                <span className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/20 text-white text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:py-1 rounded">
                   인기
                 </span>
               )}
-              <h3 className={`text-lg font-bold ${service.popular ? "text-white" : "text-gray-900"}`}>
+              <h3 className={`text-sm sm:text-lg font-bold ${service.popular ? "text-white" : "text-gray-900"}`}>
                 {service.name}
               </h3>
-              <p className={`mt-2 text-sm ${service.popular ? "text-white/70" : "text-gray-500"}`}>
+              <p className={`mt-1 sm:mt-2 text-xs sm:text-sm ${service.popular ? "text-white/70" : "text-gray-500"}`}>
                 {service.description}
               </p>
-              <p className={`mt-4 text-2xl font-bold ${service.popular ? "text-white" : "text-gray-900"}`}>
+              <p className={`mt-2 sm:mt-4 text-lg sm:text-2xl font-bold ${service.popular ? "text-white" : "text-gray-900"}`}>
                 {service.price}
               </p>
             </div>
@@ -76,7 +76,7 @@ export function Services() {
         </div>
 
         {/* Note */}
-        <p className="mt-8 text-center text-sm text-gray-400">
+        <p className="mt-6 sm:mt-8 text-center text-xs sm:text-sm text-gray-400">
           * 기장, 모량, 시술 난이도에 따라 가격이 변동될 수 있습니다
         </p>
       </div>
