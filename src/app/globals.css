@@ -28,6 +28,12 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* 선택 영역 스타일 */
+  ::selection {
+    background-color: rgba(124, 82, 149, 0.2);
+    color: var(--salon-text);
+  }
 }
 
 @layer components {
@@ -36,7 +42,25 @@
   }
 
   .section-padding {
-    @apply py-16 sm:py-20 lg:py-24;
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .section-header {
+    @apply mx-auto max-w-2xl text-center mb-12 lg:mb-16;
+  }
+
+  .section-label {
+    @apply inline-block text-xs font-semibold uppercase tracking-[0.2em] mb-3;
+    color: var(--salon-primary);
+  }
+
+  .section-title {
+    @apply text-3xl font-bold sm:text-4xl lg:text-5xl leading-tight;
+    color: var(--salon-text);
+  }
+
+  .section-description {
+    @apply mt-4 text-gray-600 text-lg max-w-xl mx-auto;
   }
 
   .btn-primary {
@@ -45,15 +69,18 @@
     justify-content: center;
     border-radius: 9999px;
     background-color: var(--salon-primary);
-    padding: 0.75rem 1.5rem;
+    padding: 0.875rem 2rem;
     color: white;
     font-weight: 500;
-    transition: all 0.2s;
+    font-size: 0.9375rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px 0 rgba(124, 82, 149, 0.25);
   }
 
   .btn-primary:hover {
     background-color: var(--salon-dark);
-    box-shadow: 0 10px 15px -3px rgb(124 82 149 / 0.3);
+    box-shadow: 0 6px 20px 0 rgba(124, 82, 149, 0.35);
+    transform: translateY(-2px);
   }
 
   .btn-outline {
@@ -62,27 +89,62 @@
     justify-content: center;
     border-radius: 9999px;
     border: 2px solid var(--salon-primary);
-    padding: 0.75rem 1.5rem;
+    padding: 0.875rem 2rem;
     color: var(--salon-primary);
     font-weight: 500;
-    transition: all 0.2s;
+    font-size: 0.9375rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .btn-outline:hover {
     background-color: var(--salon-primary);
     color: white;
+    transform: translateY(-2px);
+  }
+
+  /* 카드 스타일 */
+  .card {
+    @apply rounded-2xl bg-white p-6 sm:p-8 transition-all duration-300;
+    box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.05);
+  }
+
+  .card:hover {
+    box-shadow: 0 12px 40px -8px rgba(124, 82, 149, 0.15);
+    transform: translateY(-4px);
+  }
+
+  /* 글래스모피즘 */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-dark {
+    background: rgba(124, 82, 149, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 }
 
-/* Custom animations */
+/* 애니메이션 */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -91,14 +153,66 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* 그라디언트 텍스트 */
+.gradient-text {
+  background: linear-gradient(135deg, var(--salon-primary) 0%, var(--salon-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--salon-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--salon-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--salon-primary);
 }
