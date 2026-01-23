@@ -41,11 +41,11 @@ export function Footer() {
           <div>
             <h3 className="text-xs sm:text-sm font-medium text-gray-400 mb-3 sm:mb-4">연락처</h3>
             <div className="space-y-2 sm:space-y-3">
-              <a href="tel:031-387-5117" className="flex items-center gap-2 text-sm sm:text-base text-white font-medium hover:text-white transition-colors">
+              <a href="tel:010-9800-7160" className="flex items-center gap-2 text-sm sm:text-base text-white font-medium hover:text-white transition-colors">
                 <svg className="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                031-387-5117
+                010-9800-7160
               </a>
               <p className="text-xs sm:text-sm text-gray-400">
                 경기도 안양시 동안구 관양동<br />
