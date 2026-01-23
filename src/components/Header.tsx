@@ -35,7 +35,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="relative px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:text-black rounded-lg hover:bg-purple-50"
+                    className="relative px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:text-black rounded-lg hover:bg-gray-100"
                   >
                     {item.name}
                   </Link>
