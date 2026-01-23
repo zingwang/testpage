@@ -34,7 +34,7 @@ export function About() {
                 동네 주민분들의 머리를 손질해 온 이지은헤어입니다.
               </p>
               <p>
-                <strong className="text-gray-900">"자연스러움"</strong>을
+                <strong className="text-gray-900">&ldquo;자연스러움&rdquo;</strong>을
                 가장 중요하게 생각합니다. 억지로 만든 컬이 아닌,
                 마치 타고난 것처럼 자연스럽게 떨어지는 웨이브.
               </p>

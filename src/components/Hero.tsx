@@ -135,7 +135,7 @@ export function Hero() {
                       }`}
                     >
                       <p className="text-white/80 text-base leading-relaxed line-clamp-4">
-                        "{review.content}"
+                        &ldquo;{review.content}&rdquo;
                       </p>
                     </div>
                   ))}

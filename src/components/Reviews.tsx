@@ -56,7 +56,7 @@ export function Reviews() {
 
               {/* Content */}
               <p className="text-gray-600 text-sm leading-relaxed">
-                "{review.content}"
+                &ldquo;{review.content}&rdquo;
               </p>
 
               {/* Service Tag */}
