@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // 네이버, 구글 웹마스터 도구 인증 코드 추가 시 사용
-    // google: "구글-인증-코드",
-    // other: { "naver-site-verification": "네이버-인증-코드" },
+    other: {
+      "naver-site-verification": "138a626725b0920b6ec11e5c055e2c2dc2140d4c",
+    },
   },
   alternates: {
     canonical: "https://leejieun-salon.netlify.app",
