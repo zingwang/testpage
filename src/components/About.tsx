@@ -45,10 +45,10 @@ export function About() {
             {/* Owner */}
             <div className="mt-6 sm:mt-8 flex items-center gap-3 sm:gap-4">
               <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-black flex items-center justify-center text-white text-sm sm:text-base font-bold">
-                이
+                강
               </div>
               <div>
-                <p className="font-bold text-gray-900 text-sm sm:text-base">이지은</p>
+                <p className="font-bold text-gray-900 text-sm sm:text-base">강인선</p>
                 <p className="text-xs sm:text-sm text-gray-500">Lee Jieyn Hair 원장</p>
               </div>
             </div>
