@@ -74,7 +74,7 @@ export function IntroAnimation({ onComplete }: IntroAnimationProps) {
           }`}
         >
           <p className="text-white/50 text-xs sm:text-sm tracking-widest">
-            이지은헤어 · 관양시장
+            이지은헤어 · 관양동
           </p>
         </div>
       </div>

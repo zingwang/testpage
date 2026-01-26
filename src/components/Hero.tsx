@@ -43,7 +43,7 @@ export function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Left - Main Content */}
           <div className="text-center lg:text-left">
-            <p className="text-xs sm:text-sm text-white/50 mb-2 sm:mb-3">관양시장 · Since 2004</p>
+            <p className="text-xs sm:text-sm text-white/50 mb-2 sm:mb-3">관양동 · Since 2004</p>
 
             <h1 className="text-3xl sm:text-4xl font-bold text-white lg:text-6xl">
               컷 & 펌 전문

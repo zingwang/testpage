@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 import { PageWrapper } from "@/components/PageWrapper";
 
 /**
- * Lee Jieyn Hair - 관양시장 미용실 랜딩 페이지
+ * Lee Jieyn Hair - 관양동 미용실 랜딩 페이지
  */
 export default function Home() {
   return (

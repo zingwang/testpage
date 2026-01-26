@@ -48,8 +48,7 @@ export function Footer() {
                 010-9800-7160
               </a>
               <p className="text-xs sm:text-sm text-gray-400">
-                경기도 안양시 동안구 관양동<br />
-                관양시장 내
+                경기도 안양시 동안구 관양동
               </p>
               <a
                 href={NAVER_PLACE_URL}

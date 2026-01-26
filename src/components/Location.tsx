@@ -22,7 +22,7 @@ export function Location() {
                 </svg>
               </div>
               <p className="font-bold text-gray-900 text-base sm:text-lg">Lee Jieyn Hair</p>
-              <p className="text-gray-500 text-sm mt-1">관양시장 내</p>
+              <p className="text-gray-500 text-sm mt-1">관양동</p>
               <a
                 href={NAVER_MAP_URL}
                 target="_blank"
@@ -51,7 +51,6 @@ export function Location() {
                 <div>
                   <p className="text-[10px] sm:text-xs text-gray-400 uppercase">주소</p>
                   <p className="mt-0.5 sm:mt-1 text-sm sm:text-base font-medium text-gray-900">경기도 안양시 동안구 관양동</p>
-                  <p className="text-gray-500 text-xs sm:text-sm">관양시장 내</p>
                 </div>
               </div>
             </div>

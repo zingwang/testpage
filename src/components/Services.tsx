@@ -28,7 +28,7 @@ const serviceCategories = [
     note: "Short 기준",
     popular: false,
     items: [
-      { name: "염색(뿌리)", price: "33,000" },
+      { name: "염색(뿌리)", price: "35,000" },
       { name: "염색(뿌리)+컷", price: "42,000" },
       { name: "매니큐어 · 왁싱", price: "50,000" },
       { name: "앰플 추가", price: "+10,000" },

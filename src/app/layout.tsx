@@ -13,14 +13,13 @@ const notoSansKr = Noto_Sans_KR({
 export const metadata: Metadata = {
   metadataBase: new URL("https://leejieun-salon.netlify.app"),
   title: {
-    default: "이지은헤어 | 관양시장 미용실 · 컷&펌 전문",
+    default: "이지은헤어 | 관양동 미용실 · 컷&펌 전문",
     template: "%s | 이지은헤어",
   },
   description:
-    "안양 관양시장 미용실. 컷&펌 전문, 자연스러운 펌, 볼륨펌, 매직, 염색. 30년 이상 경력 1:1 맞춤 시술.",
+    "안양 관양동 미용실. 컷&펌 전문, 자연스러운 펌, 볼륨펌, 매직, 염색. 30년 이상 경력 1:1 맞춤 시술.",
   keywords: [
     "관양동미용실",
-    "관양시장미용실",
     "이지은헤어",
     "Lee Jieyn Hair",
     "컷앤펌",
@@ -45,23 +44,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ko_KR",
     url: "https://leejieun-salon.netlify.app",
-    title: "이지은헤어 | 관양시장 미용실 · 컷&펌 전문",
+    title: "이지은헤어 | 관양동 미용실 · 컷&펌 전문",
     description:
-      "안양 관양시장 미용실. 컷&펌 전문, 자연스러운 펌, 볼륨펌, 매직, 염색. 30년 이상 경력 1:1 맞춤 시술.",
+      "안양 관양동 미용실. 컷&펌 전문, 자연스러운 펌, 볼륨펌, 매직, 염색. 30년 이상 경력 1:1 맞춤 시술.",
     siteName: "Lee Jieyn Hair",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "이지은헤어 - 관양시장 미용실",
+        alt: "이지은헤어 - 관양동 미용실",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "이지은헤어 | 관양시장 미용실 · 컷&펌 전문",
-    description: "안양 관양시장 미용실. 컷&펌 전문, 자연스러운 펌, 볼륨펌, 매직, 염색. 30년 이상 경력 1:1 맞춤 시술.",
+    title: "이지은헤어 | 관양동 미용실 · 컷&펌 전문",
+    description: "안양 관양동 미용실. 컷&펌 전문, 자연스러운 펌, 볼륨펌, 매직, 염색. 30년 이상 경력 1:1 맞춤 시술.",
     images: ["/og-image.jpg"],
   },
   robots: {

@@ -29,7 +29,7 @@ export function About() {
 
             <div className="mt-4 sm:mt-6 space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-600 leading-relaxed">
               <p>
-                관양시장에서 30년 넘게 한 자리를 지키며
+                관양동에서 30년 넘게
                 동네 주민분들의 머리를 손질해 온 이지은헤어입니다.
               </p>
               <p>
