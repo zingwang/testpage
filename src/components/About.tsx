@@ -15,8 +15,8 @@ export function About() {
                 <p className="text-xs sm:text-sm text-gray-500 mt-1">시술 고객</p>
               </div>
               <div className="text-center p-3 sm:p-6 rounded-xl bg-gray-50">
-                <p className="text-xl sm:text-3xl font-bold text-black">98%</p>
-                <p className="text-xs sm:text-sm text-gray-500 mt-1">재방문율</p>
+                <p className="text-xl sm:text-3xl font-bold text-black">1:1</p>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">맞춤 상담</p>
               </div>
             </div>
           </div>
