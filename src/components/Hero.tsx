@@ -6,21 +6,24 @@ import { useState, useEffect } from "react";
 const reviews = [
   {
     id: 1,
-    content: "컷트 + 자연스러운 펌 받았어요. 58번째 방문인데 매번 만족합니다!",
+    content: "세심한 상담과 꼼꼼한 시술 덕분에 편안하게 맡길 수 있었습니다. 손상 없이 자연스러운 웨이브가 나오도록 신경 써주셨어요.",
     author: "소비천재제이",
-    visitCount: "58번째 방문",
+    visitCount: "단골 고객",
+    service: "컷트 + 펌",
   },
   {
     id: 2,
-    content: "염색이 잘 되었어요! 원하는 스타일로 잘해줘요. 항상 만족스러워요.",
+    content: "원하는 스타일로 잘해주시고, 트렌디하면서도 고급스러운 느낌으로 완성해주셨어요. 염색 후에도 머릿결이 부드럽고 윤기가 나서 정말 만족스럽습니다.",
     author: "viv****",
-    visitCount: "57번째 방문",
+    visitCount: "62번째 방문",
+    service: "염색",
   },
   {
     id: 3,
-    content: "언제나 신경써서 예쁘게 만져 주시는 원장님 짱!!~~~",
-    author: "viv****",
+    content: "세심한 상담을 통해 얼굴형과 스타일에 맞는 헤어를 추천해 주셔서 만족스러웠어요. 친절한 서비스 덕분에 편안하게 머리를 맡길 수 있었습니다.",
+    author: "인사이트박스",
     visitCount: "단골 고객",
+    service: "컷트 + 스타일링",
   },
 ];
 
@@ -51,7 +54,7 @@ export function Hero() {
             <p className="mt-1 text-sm sm:text-base text-white/40">이지은헤어</p>
 
             <p className="mt-4 sm:mt-6 text-sm sm:text-base text-white/60 leading-relaxed max-w-md mx-auto lg:mx-0 lg:text-lg">
-              20년 경력의 노하우로 고객님의 얼굴형과 모질에 맞는
+              30년 이상의 경력과 노하우로 고객님의 얼굴형과 모질에 맞는
               자연스러운 스타일링을 제공합니다.
             </p>
 
@@ -73,7 +76,7 @@ export function Hero() {
             {/* Stats */}
             <div className="mt-6 sm:mt-8 flex justify-center gap-8 lg:justify-start">
               <div className="text-center">
-                <p className="text-2xl sm:text-3xl font-bold text-white">20+</p>
+                <p className="text-2xl sm:text-3xl font-bold text-white">30+</p>
                 <p className="text-xs sm:text-sm text-white/50">년 경력</p>
               </div>
               <div className="text-center">
@@ -118,13 +121,18 @@ export function Hero() {
                       ))}
                     </div>
                   </div>
-                  <span className="text-xs text-green-400 font-medium">
-                    {reviews[currentReview].visitCount}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] sm:text-xs bg-white/10 text-white/60 px-2 py-0.5 rounded-full">
+                      {reviews[currentReview].service}
+                    </span>
+                    <span className="text-xs text-green-400 font-medium">
+                      {reviews[currentReview].visitCount}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Review Content with Animation */}
-                <div className="relative h-[60px] sm:h-[70px] lg:h-[80px] overflow-hidden">
+                <div className="relative h-[72px] sm:h-[80px] lg:h-[88px] overflow-hidden">
                   {reviews.map((review, index) => (
                     <div
                       key={review.id}

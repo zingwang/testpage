@@ -14,7 +14,7 @@ export function Footer() {
               <span className="block text-[10px] sm:text-xs text-gray-400">이지은헤어 · 컷 & 펌 전문</span>
             </Link>
             <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-400 leading-relaxed">
-              20년 경력의 노하우로 자연스러운 스타일링을 선사합니다.
+              30년 이상의 경력과 노하우로 자연스러운 스타일링을 선사합니다.
             </p>
           </div>
 

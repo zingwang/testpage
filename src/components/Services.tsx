@@ -1,34 +1,48 @@
-const services = [
+const serviceCategories = [
   {
-    name: "자연스러운 펌",
-    description: "얼굴형과 모질에 맞는 자연스러운 웨이브",
-    price: "7만원~",
-    popular: true,
-  },
-  {
-    name: "볼륨펌",
-    description: "뿌리부터 풍성한 볼륨감",
-    price: "8만원~",
-  },
-  {
-    name: "매직 셋팅",
-    description: "차분하게 정돈된 스트레이트",
-    price: "10만원~",
-  },
-  {
-    name: "염색 · 탈색",
-    description: "트렌디한 컬러, 두피 자극 최소화",
-    price: "5만원~",
-  },
-  {
+    category: "Cut",
     name: "커트",
-    description: "얼굴형 분석 후 맞춤 스타일링",
-    price: "2만원~",
+    popular: false,
+    items: [
+      { name: "남성컷", price: "14,000" },
+      { name: "여성컷", price: "15,000" },
+      { name: "디자인컷", price: "20,000" },
+      { name: "주니어", price: "13,000" },
+    ],
   },
   {
-    name: "클리닉",
-    description: "손상 모발 집중 케어",
-    price: "3만원~",
+    category: "Perm",
+    name: "펌",
+    note: "Short 기준",
+    popular: true,
+    items: [
+      { name: "디자인펌", price: "45,000" },
+      { name: "드라이펌", price: "50,000" },
+      { name: "매직펌", price: "100,000" },
+      { name: "코팅펌 추가", price: "+10,000" },
+    ],
+  },
+  {
+    category: "Color",
+    name: "염색",
+    note: "Short 기준",
+    popular: false,
+    items: [
+      { name: "염색(뿌리)", price: "33,000" },
+      { name: "염색(뿌리)+컷", price: "42,000" },
+      { name: "매니큐어 · 왁싱", price: "50,000" },
+      { name: "앰플 추가", price: "+10,000" },
+    ],
+  },
+  {
+    category: "Dry & Up Style",
+    name: "드라이 · 업스타일",
+    popular: false,
+    items: [
+      { name: "드라이", price: "15,000" },
+      { name: "업스타일", price: "50,000" },
+      { name: "샴푸", price: "10,000" },
+    ],
   },
 ];
 
@@ -47,37 +61,54 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
-          {services.map((service) => (
+        <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
+          {serviceCategories.map((cat) => (
             <div
-              key={service.name}
+              key={cat.category}
               className={`relative rounded-xl p-4 sm:p-6 transition-shadow hover:shadow-md ${
-                service.popular
-                  ? "bg-black text-white col-span-2 sm:col-span-1"
+                cat.popular
+                  ? "bg-black text-white"
                   : "bg-white border border-gray-200"
               }`}
             >
-              {service.popular && (
+              {cat.popular && (
                 <span className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-white/20 text-white text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:py-1 rounded">
                   인기
                 </span>
               )}
-              <h3 className={`text-sm sm:text-lg font-bold ${service.popular ? "text-white" : "text-gray-900"}`}>
-                {service.name}
-              </h3>
-              <p className={`mt-1 sm:mt-2 text-xs sm:text-sm ${service.popular ? "text-white/70" : "text-gray-500"}`}>
-                {service.description}
-              </p>
-              <p className={`mt-2 sm:mt-4 text-lg sm:text-2xl font-bold ${service.popular ? "text-white" : "text-gray-900"}`}>
-                {service.price}
-              </p>
+              <div className="flex items-baseline gap-2">
+                <h3 className={`text-sm sm:text-lg font-bold ${cat.popular ? "text-white" : "text-gray-900"}`}>
+                  {cat.name}
+                </h3>
+                <span className={`text-[10px] sm:text-xs ${cat.popular ? "text-white/40" : "text-gray-400"}`}>
+                  {cat.category}
+                </span>
+              </div>
+              {cat.note && (
+                <p className={`mt-0.5 text-[10px] sm:text-xs ${cat.popular ? "text-white/50" : "text-gray-400"}`}>
+                  {cat.note}
+                </p>
+              )}
+
+              <div className="mt-3 sm:mt-4 space-y-1.5 sm:space-y-2">
+                {cat.items.map((item) => (
+                  <div key={item.name} className="flex items-center justify-between">
+                    <span className={`text-xs sm:text-sm ${cat.popular ? "text-white/80" : "text-gray-600"}`}>
+                      {item.name}
+                    </span>
+                    <span className={`text-xs sm:text-sm font-semibold ${cat.popular ? "text-white" : "text-gray-900"}`}>
+                      {item.price}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
 
         {/* Note */}
         <p className="mt-6 sm:mt-8 text-center text-xs sm:text-sm text-gray-400">
-          * 기장, 모량, 시술 난이도에 따라 가격이 변동될 수 있습니다
+          * 상기 가격은 기본 가격으로 상담 후 최종 가격이 결정됩니다
         </p>
       </div>
     </section>

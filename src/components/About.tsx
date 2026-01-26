@@ -7,7 +7,7 @@ export function About() {
           <div className="order-2 lg:order-1">
             <div className="grid grid-cols-3 gap-2 sm:gap-4">
               <div className="text-center p-3 sm:p-6 rounded-xl bg-gray-50">
-                <p className="text-xl sm:text-3xl font-bold text-black">20+</p>
+                <p className="text-xl sm:text-3xl font-bold text-black">30+</p>
                 <p className="text-xs sm:text-sm text-gray-500 mt-1">년 경력</p>
               </div>
               <div className="text-center p-3 sm:p-6 rounded-xl bg-gray-50">
@@ -24,12 +24,12 @@ export function About() {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
-              20년의 노하우
+              30년 이상의 노하우
             </h2>
 
             <div className="mt-4 sm:mt-6 space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-600 leading-relaxed">
               <p>
-                관양시장에서 20년 넘게 한 자리를 지키며
+                관양시장에서 30년 넘게 한 자리를 지키며
                 동네 주민분들의 머리를 손질해 온 이지은헤어입니다.
               </p>
               <p>

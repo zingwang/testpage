@@ -34,7 +34,7 @@ export function JsonLd() {
     ],
     "priceRange": "$$",
     "servesCuisine": "Hair Salon",
-    "description": "안양 관양동 관양시장 미용실. 컷 & 펌 전문, 20년 경력의 노하우로 자연스러운 스타일링을 제공합니다.",
+    "description": "안양 관양동 관양시장 미용실. 컷 & 펌 전문, 30년 이상의 경력과 노하우로 자연스러운 스타일링을 제공합니다.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
