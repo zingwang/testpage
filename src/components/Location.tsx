@@ -91,7 +91,7 @@ export function Location() {
                   <div className="mt-1 sm:mt-2 space-y-0.5 sm:space-y-1 text-xs sm:text-sm">
                     <div className="flex justify-between">
                       <span className="text-gray-500">월 - 금</span>
-                      <span className="font-medium text-gray-900">10:00 - 20:00</span>
+                      <span className="font-medium text-gray-900">10:00 - 19:00</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-500">토요일</span>
