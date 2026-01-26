@@ -95,7 +95,7 @@ export function Location() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-500">토요일</span>
-                      <span className="font-medium text-gray-900">10:00 - 18:00</span>
+                      <span className="font-medium text-gray-900">10:00 - 19:00</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-500">일요일</span>

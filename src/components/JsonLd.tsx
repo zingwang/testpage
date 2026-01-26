@@ -29,7 +29,7 @@ export function JsonLd() {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Saturday",
         "opens": "10:00",
-        "closes": "18:00"
+        "closes": "19:00"
       }
     ],
     "priceRange": "$$",
