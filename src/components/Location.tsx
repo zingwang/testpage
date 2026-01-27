@@ -57,7 +57,7 @@ export function Location() {
 
             {/* Phone */}
             <a
-              href="tel:010-9800-7160"
+              href="tel:031-387-5117"
               className="block rounded-xl p-4 sm:p-5 text-white bg-black"
             >
               <div className="flex items-center justify-between">
@@ -69,7 +69,7 @@ export function Location() {
                   </div>
                   <div>
                     <p className="text-[10px] sm:text-xs text-white/60 uppercase">전화</p>
-                    <p className="mt-0.5 sm:mt-1 text-lg sm:text-xl font-bold">010-9800-7160</p>
+                    <p className="mt-0.5 sm:mt-1 text-lg sm:text-xl font-bold">031-387-5117</p>
                   </div>
                 </div>
                 <svg className="h-4 w-4 sm:h-5 sm:w-5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
